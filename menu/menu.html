@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Restaurant Pizzaria Elwad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #121212 url("image1.jpg") no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Poppins', sans-serif;
+            color: #e0e0e0;
+        }
+        .menu-section {
+            background: rgba(18, 18, 18, 0.7); /* Darker, slightly transparent background */
+            border-radius: 22px;
+            padding: 30px 18px;
+            margin-bottom: 32px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid #333;
+        }
+        .menu-title {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #FFD700; /* Gold accent for the title */
+            letter-spacing: 2px;
+            font-family: 'Pacifico', cursive;
+        }
+        .section-label {
+            background: #FFD700; /* Gold accent color */
+            color: #121212;
+            font-weight: 600;
+            border-radius: 18px;
+            padding: 6px 22px;
+            display: inline-block;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .menu-list {
+            margin-bottom: 25px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            font-weight: 400;
+            padding-bottom: 5px;
+            border-bottom: 1px dotted #444;
+        }
+        .menu-item h5 {
+            margin: 0;
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #eee;
+        }
+        .menu-item .item-details {
+            display: flex;
+            flex-direction: column;
+        }
+        .menu-item .desc {
+            display: block;
+            font-style: italic;
+            color: #bdbdbd;
+            font-size: 0.9em;
+            margin-top: 2px;
+        }
+        .menu-price {
+            font-weight: 700;
+            color: #FFD700; /* Gold accent for prices */
+            margin-left: 15px;
+            font-size: 1.2em;
+            white-space: nowrap;
+        }
+        .menu-img-round {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #FFD700;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+        }
+        .menu-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .menu-col {
+            flex: 1 1 320px;
+            max-width: 400px;
+            min-width: 280px;
+        }
+        .menu-col img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .menu-title {
+                font-size: 2.5rem;
+            }
+            .menu-row {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .menu-section {
+                padding: 20px 10px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <h1 class="menu-title">Restaurant Pizzaria Elwad</h1>
+
+        <div class="menu-section">
+            <div class="menu-row">
+                <div class="menu-col">
+                    <img src="sandwich.jpg" alt="Sandwich" class="menu-img-round">
+                </div>
+                <div class="menu-col">
+                    <span class="section-label">Nos Sandwichs</span>
+                    <div class="menu-list">
+                        <div class="menu-item"><div class="item-details"><h5>Chicken</h5><span class="desc">salade, tomate, oignon, poulet mariné</span></div><span class="menu-price">12DT</span></div>
+                        <div class="menu-item"><div class="item-details"><h5>Suisse</h5><span class="desc">salade, tomate, oignon, escalope, boursin</span></div><span class="menu-price">12DT</span></div>
+                    </div>
+                    
+                    <span class="section-label">Nos Burgers</span>
+                    <div class="menu-list">
+                        <div class="menu-item"><div class="item-details"><h5>Chicken burger</h5><span class="desc">salade, tomate, oignon, poulet, cheddar</span></div><span class="menu-price">10DT</span></div>
+                    </div>
+
+                    <span class="section-label">Nos Tacos</span>
+                    <div class="menu-list">
+                        <div class="menu-item"><h5>Tacos Escalope</h5><span class="menu-price">12DT</span></div>
+                        <div class="menu-item"><h5>Tacos Merguez</h5><span class="menu-price">12DT</span></div>
+                        <div class="menu-item"><h5>Tacos Viande Hachée</h5><span class="menu-price">12DT</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <div class="menu-row">
+              <div class="menu-col">
+    <img src="pizza.jpg" alt="Pizza" class="menu-img-round" style="margin-top:500px;">
+</div>
+                <div class="menu-col">
+                    <span class="section-label">Nos Pizzas</span>
+                    <div class="menu-list">
+                        <div class="menu-item"><div class="item-details"><h5>Classica</h5><span class="desc">Tomate, Fromage</span></div><span class="menu-price">12DT</span></div>
+                        <div class="menu-item"><div class="item-details"><h5>Neptune</h5><span class="desc">Tomate, Fromage, Thon</span></div><span class="menu-price">16DT</span></div>
+                        <div class="menu-item"><div class="item-details"><h5>Regina</h5><span class="desc">Tomate, Fromage, Jambon, Champignon</span></div><span class="menu-price">18DT</span></div>
+                        <div class="menu-item"><div class="item-details"><h5>Orientale</h5><span class="desc">Tomate, Fromage, Oeuf, Merguez, Poivron, Oignon</span></div><span class="menu-price">18DT</span></div>
+                        <div class="menu-item"><div class="item-details"><h5>4 Saisons</h5><span class="desc">Tomate, Fromage, Jambon, Poivron, Oignon</span></div><span class="menu-price">18DT</span></div>
+                        <div class="menu-item"><div class="item-details"><h5>4 Fromages</h5><span class="desc">Tomate, Fromage, Brie, Gorgonzola, Bleu</span></div><span class="menu-price">18DT</span></div>
+                        <div class="menu-item"><div class="item-details"><h5>Mexicaine</h5><span class="desc">Tomate, Fromage, Viande hachée, Merguez, Poivron, Oignon</span></div><span class="menu-price">18DT</span></div>
+                        <div class="menu-item"><div class="item-details"><h5>Chicken</h5><span class="desc">Tomate, Fromage, Poulet, Oignon</span></div><span class="menu-price">18DT</span></div>
+                        <div class="menu-item"><div class="item-details"><h5>Chèvres Miel</h5><span class="desc">Crème fraîche, Fromage, Chèvre, Miel</span></div><span class="menu-price">18DT</span></div>
+                        <div class="menu-item"><div class="item-details"><h5>Rimini</h5><span class="desc">Crème fraîche, Fromage, Pomme de terre</span></div><span class="menu-price">18DT</span></div>
+                        <div class="menu-item"><div class="item-details"><h5>Fermière</h5><span class="desc">Crème fraîche, Fromage, jambon, Pomme de terre</span></div><span class="menu-price">18DT</span></div>
+                        <div class="menu-item"><div class="item-details"><h5>Pizza du Chef</h5><span class="desc">Crème fraîche, Fromage, Jambon, Miel</span></div><span class="menu-price">18DT</span></div>
+                        <div class="menu-item"><div class="item-details"><h5>Gourmande</h5><span class="desc">Tomate, Fromage, Viande hachée, Merguez, Poulet</span></div><span class="menu-price">20DT</span></div>
+                        <div class="menu-item"><div class="item-details"><h5>5 Fromages</h5><span class="desc">Crème fraîche, Fromage, Brie, Gorgonzola, Chevre</span></div><span class="menu-price">20DT</span></div>
+                        <div class="menu-item"><div class="item-details"><h5>Boursin</h5><span class="desc">Crème fraîche, Fromage, Viande hachée, Boursin, Oignon</span></div><span class="menu-price">20DT</span></div>
+                        <div class="menu-item"><div class="item-details"><h5>Elwad</h5><span class="desc">Tomate, Fromage, Cocktail de fruits de mer</span></div><span class="menu-price">20DT</span></div>
+                        <div class="menu-item"><div class="item-details"><h5>Sardaigne</h5><span class="desc">Crème fraîche, Fromage, Brie, Raclette, Chevre</span></div><span class="menu-price">20DT</span></div>
+                        <div class="menu-item"><div class="item-details"><h5>Galzon Soufflé</h5><span class="desc">Tomate, Fromage, Jambon, Oeuf</span></div><span class="menu-price">20DT</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <div class="menu-row">
+                <div class="menu-col">
+                    <span class="section-label">Nos Plats</span>
+                    <div class="menu-list">
+                        <div class="menu-item"><h5>Spaghetti fruits de mer</h5><span class="menu-price">30DT</span></div>
+                        <div class="menu-item"><h5>Spaghetti crevette</h5><span class="menu-price">25DT</span></div>
+                        <div class="menu-item"><h5>Escalope grillée</h5><span class="menu-price">15DT</span></div>
+                    </div>
+                    
+                    <span class="section-label">Poissons</span>
+                    <div class="menu-list">
+                        <div class="menu-item"><h5>Poisson de jour grillé</h5><span class="desc">Servi avec pâte, frite et salade</span></div>
+                        <div class="menu-item"><h5>Grillade mixte poisson</h5><span class="desc">Servi avec pâte, frite et salade</span></div>
+                    </div>
+
+                    <span class="section-label">Supplements</span>
+                    <div class="menu-list">
+                        <div class="menu-item"><h5>Oeuf</h5><span class="menu-price">2DT</span></div>
+                        <div class="menu-item"><h5>Viande</h5><span class="menu-price">3DT</span></div>
+                        <div class="menu-item"><h5>Assiette de frites</h5><span class="menu-price">4DT</span></div>
+                    </div>
+                </div>
+                <div class="menu-col text-center">
+                    <img src="plats.jpg" alt="Plat" class="menu-img-round">
+                    <img src="boissons.jpg" alt="Boissons" class="menu-img-round">
+                    <span class="section-label">Boissons</span>
+                    <div class="menu-list">
+                        <div class="menu-item"><h5>Canette</h5><span class="menu-price">3.5DT</span></div>
+                        <div class="menu-item"><h5>Eau 1.5L</h5><span class="menu-price">2DT</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
